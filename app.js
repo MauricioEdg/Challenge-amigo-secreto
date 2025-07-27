@@ -30,7 +30,9 @@ function atualizaListaAmigos(){
 
 function sortearAmigo(){
     if(listaAmigos.length == 0){
-        alert("Lista de amigos vazia, por favor adicione seu amigos !!!");        
+        alert("Lista de amigos vazia, por favor adicione seus amigos !!!");  
+        resultado.innerHTML = "";  
+        return;    
     }
 
     const indiceSorteado = Math.floor(Math.random() * listaAmigos.length);
